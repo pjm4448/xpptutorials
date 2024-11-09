@@ -11,12 +11,13 @@
     <GenerateCrossReferences>True</GenerateCrossReferences>
     <RunAppCheckerRules>False</RunAppCheckerRules>
     <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
-    <DeployOnline>True</DeployOnline>
+    <DeployOnline>False</DeployOnline>
     <ProjectGuid>{cde52e9e-7cb5-42a1-9e7a-f546bbbf0fba}</ProjectGuid>
     <Name>Create-a-Custom-Service-in-D365</Name>
     <RootNamespace>Create-a-Custom-Service-in-D365</RootNamespace>
     <StartupType>Class</StartupType>
-    <StartupObject>RunnableClass1</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -35,12 +36,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AxClass\RunnableClass1">
+    <Content Include="AxClass\rsmTutReponse">
       <SubType>Content</SubType>
-      <Name>RunnableClass1</Name>
-      <Link>Classes\RunnableClass1</Link>
+      <Name>rsmTutReponse</Name>
+      <Link>Classes\rsmTutReponse</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutRequestSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutRequestSimple</Name>
+      <Link>Classes\rsmTutRequestSimple</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutServiceSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceSimple</Name>
+      <Link>Classes\rsmTutServiceSimple</Link>
+    </Content>
+    <Content Include="AxServiceGroup\rsmTutServiceGroupSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceGroupSimple</Name>
+      <Link>Service Groups\rsmTutServiceGroupSimple</Link>
+    </Content>
+    <Content Include="AxService\rsmTutServiceSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceSimple</Name>
+      <Link>Services\rsmTutServiceSimple</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
