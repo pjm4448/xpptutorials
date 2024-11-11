@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "create-a-complex-service-in-d365 (USR) [Datacom]", "create-a-complex-service-in-d365.rnrproj", "{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD8C72C7-5BDF-4E0F-AB55-11E74AD7576E}
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

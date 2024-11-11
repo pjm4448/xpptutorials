@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>Datacom</Model>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{e0d82ee0-b2fc-4d9f-8da5-bf5b06f1d5bc}</ProjectGuid>
+    <Name>create-a-complex-service-in-d365</Name>
+    <RootNamespace>create-a-complex-service-in-d365</RootNamespace>
+    <StartupType>Class</StartupType>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\rsmTutOrderHeaderClass">
+      <SubType>Content</SubType>
+      <Name>rsmTutOrderHeaderClass</Name>
+      <Link>Classes\rsmTutOrderHeaderClass</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutOrderLineClass">
+      <SubType>Content</SubType>
+      <Name>rsmTutOrderLineClass</Name>
+      <Link>Classes\rsmTutOrderLineClass</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutRequestComplex">
+      <SubType>Content</SubType>
+      <Name>rsmTutRequestComplex</Name>
+      <Link>Classes\rsmTutRequestComplex</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutResponseComplex">
+      <SubType>Content</SubType>
+      <Name>rsmTutResponseComplex</Name>
+      <Link>Classes\rsmTutResponseComplex</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutServiceComplex">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceComplex</Name>
+      <Link>Classes\rsmTutServiceComplex</Link>
+    </Content>
+    <Content Include="AxEnum\rsmOrderStatus">
+      <SubType>Content</SubType>
+      <Name>rsmOrderStatus</Name>
+      <Link>Base Enums\rsmOrderStatus</Link>
+    </Content>
+    <Content Include="AxServiceGroup\rsmTutServiceGroupComplex">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceGroupComplex</Name>
+      <Link>Service Groups\rsmTutServiceGroupComplex</Link>
+    </Content>
+    <Content Include="AxService\rsmTutServiceComplex">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceComplex</Name>
+      <Link>Services\rsmTutServiceComplex</Link>
+    </Content>
+    <Content Include="AxTable\rsmTutOrderHeader">
+      <SubType>Content</SubType>
+      <Name>rsmTutOrderHeader</Name>
+      <Link>Tables\rsmTutOrderHeader</Link>
+    </Content>
+    <Content Include="AxTable\rsmTutOrderLine">
+      <SubType>Content</SubType>
+      <Name>rsmTutOrderLine</Name>
+      <Link>Tables\rsmTutOrderLine</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
+</Project>
