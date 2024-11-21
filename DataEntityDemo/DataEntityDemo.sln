@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "DataEntityDemo (ISV) [Fleet Management]", "DataEntityDemo.rnrproj", "{7F4B21C6-DE0C-44A3-A29E-A4D366A5A88B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F4B21C6-DE0C-44A3-A29E-A4D366A5A88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4B21C6-DE0C-44A3-A29E-A4D366A5A88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5273CFD-D923-4DDB-8695-6EC22DF970B9}
+	EndGlobalSection
+EndGlobal

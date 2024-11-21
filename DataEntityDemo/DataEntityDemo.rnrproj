@@ -5,18 +5,17 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
     <Model>Datacom</Model>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <OutputPath>bin</OutputPath>
     <SchemaVersion>2.0</SchemaVersion>
     <GenerateCrossReferences>True</GenerateCrossReferences>
     <RunAppCheckerRules>False</RunAppCheckerRules>
     <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
     <DeployOnline>False</DeployOnline>
-    <ProjectGuid>{53996cb2-9626-4149-b5db-40defbf68f46}</ProjectGuid>
-    <Name>d365-batch-job</Name>
-    <RootNamespace>d365-batch-job</RootNamespace>
+    <ProjectGuid>{7f4b21c6-de0c-44a3-a29e-a4d366a5a88b}</ProjectGuid>
+    <Name>DataEntityDemo</Name>
+    <RootNamespace>DataEntityDemo</RootNamespace>
     <StartupType>Class</StartupType>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -33,34 +32,6 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="Action Menu Items\" />
-    <Folder Include="Classes\" />
-    <Folder Include="Menu Extensions\" />
-    <Folder Include="Security Privileges\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AxClass\MyBatchJobBatch">
-      <SubType>Content</SubType>
-      <Name>MyBatchJobBatch</Name>
-      <Link>Classes\MyBatchJobBatch</Link>
-    </Content>
-    <Content Include="AxMenuExtension\SystemAdministration.Datacom">
-      <SubType>Content</SubType>
-      <Name>SystemAdministration.Datacom</Name>
-      <Link>Menu Extensions\SystemAdministration.Datacom</Link>
-    </Content>
-    <Content Include="AxMenuItemAction\MyBatchJobBatch">
-      <SubType>Content</SubType>
-      <Name>MyBatchJobBatch</Name>
-      <Link>Action Menu Items\MyBatchJobBatch</Link>
-    </Content>
-    <Content Include="AxSecurityPrivilege\MyBatchJobBatchProcess">
-      <SubType>Content</SubType>
-      <Name>MyBatchJobBatchProcess</Name>
-      <Link>Security Privileges\MyBatchJobBatchProcess</Link>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
 </Project>
