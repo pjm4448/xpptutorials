@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "create-a-complex-service-in-d365 (USR) [Datacom]", "create-a-complex-service-in-d365.rnrproj", "{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}"
 EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TutorialUnitTests (USR) [DatacomUnitTests]", "..\TutorialUnitTests\TutorialUnitTests.rnrproj", "{5023F8D7-A298-4838-A9C5-D28BECACC381}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC} = {E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +17,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0D82EE0-B2FC-4D9F-8DA5-BF5B06F1D5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5023F8D7-A298-4838-A9C5-D28BECACC381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5023F8D7-A298-4838-A9C5-D28BECACC381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
