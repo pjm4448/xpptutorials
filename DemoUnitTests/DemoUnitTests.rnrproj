@@ -4,19 +4,18 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
-    <Model>Datacom</Model>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Model>DatacomUnitTests</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <OutputPath>bin</OutputPath>
     <SchemaVersion>2.0</SchemaVersion>
     <GenerateCrossReferences>True</GenerateCrossReferences>
     <RunAppCheckerRules>False</RunAppCheckerRules>
     <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
     <DeployOnline>False</DeployOnline>
-    <ProjectGuid>{6f1e220a-4198-4503-8738-15541db02d51}</ProjectGuid>
-    <Name>while-select-statement</Name>
-    <RootNamespace>while-select-statement</RootNamespace>
+    <ProjectGuid>{a94e9b26-729a-4144-8020-76924324263c}</ProjectGuid>
+    <Name>DemoUnitTests</Name>
+    <RootNamespace>DemoUnitTests</RootNamespace>
     <StartupType>Class</StartupType>
-    <StartupObject>whileselectstatement</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -37,15 +36,10 @@
     <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AxClass\demoselect">
+    <Content Include="AxClass\DemoSelectUnitTests">
       <SubType>Content</SubType>
-      <Name>demoselect</Name>
-      <Link>Classes\demoselect</Link>
-    </Content>
-    <Content Include="AxClass\whileselectstatement">
-      <SubType>Content</SubType>
-      <Name>whileselectstatement</Name>
-      <Link>Classes\whileselectstatement</Link>
+      <Name>DemoSelectUnitTests</Name>
+      <Link>Classes\DemoSelectUnitTests</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
